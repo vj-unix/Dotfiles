@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Id": "org.kde.screentide.widget",
+        "Name": "Screentide",
+        "Description": "Shows today's usage from ActivityWatch",
+        "Icon": "screentide",
+        "Category": "Utilities",
+        "Version": "1.0",
+        "Authors": [
+            {
+                "Name": "Pratyaksh Agarwal",
+                "Email": "pratyaksh.agrwl@gmail.com"
+            }
+        ]
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-Provides": [
+        "org.kde.plasma.applet"
+    ]
+}

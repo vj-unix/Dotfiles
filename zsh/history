@@ -1,0 +1,1584 @@
+: 1788917527:0;
+: 1788684014:0;ls -A |grep .txt
+: 1788684018:0;ls -A | grep
+: 1788684163:0;cd ~
+: 1788684185:0;nano ~/.zsh_plugins.txt
+: 1788684237:0;find -maxdepth
+: 1788684245:0;find -maxdepth 3 .zsh_plugins.txt
+: 1788684258:0;find -maxdepth 3 .zsh_plugins.txt/
+: 1788684275:0;ls ~/.zshenv
+: 1788684299:0;cd $ZDOTDIR
+: 1788684308:0;nano *.txt
+: 1788684311:0;nano .*.txt
+: 1788684440:0;echo %n
+: 1788684448:0;%n
+: 1788684678:0;ls -A
+: 1788684687:0;rm .p10k*
+: 1788684799:0;nano
+: 1788684828:0;nano .zshrc
+: 1788684949:0;cd /home
+: 1788684986:0;ls Games
+: 1788684991:0;ls -l ~/Games
+: 1788685058:0;chown vjgamz04:vjgamz04 Games
+: 1788685062:0;chown vjgamz04:vjgamz04 ~/Games
+: 1788685106:0;chmod o-w ~/Games
+: 1788685108:0;ls ~
+: 1788685116:0;chmod o-w ~/Software
+: 1788685121:0;ls ~/share
+: 1788685128:0;ls ~/share/Steam
+: 1788685791:0;sudo dnf copr enable sneexy/floorp && sudo dnf in floorp -y
+: 1788685815:0;sudo dnf remove firefox
+: 1788685944:0;sudo nano /etc/default/grub
+: 1788685978:0;sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+: 1788720577:0;sudo dnf install plymouth-kcm
+: 1788720934:0;logout
+: 1788721953:0;ls $ZDOTDIR
+: 1788721957:0;ls $ZDOTDIR -A
+: 1788722008:0;source ~/.zshrc
+: 1788722040:0;fastfetch
+: 1788722048:0;nano $ZDOTDIR/.zshrc\ 
+: 1788722049:0;nano $ZDOTDIR/.zshrc
+: 1788722100:0;sudo dnf upgrade --refresh
+: 1788722562:0;# Enable the repository\
+sudo tee /etc/yum.repos.d/firefoxpwa.repo > /dev/null <<EOF\
+[firefoxpwa]\
+name=FirefoxPWA\
+metadata_expire=7d\
+baseurl=https://packagecloud.io/filips/FirefoxPWA/rpm_any/rpm_any/\$basearch\
+gpgkey=https://packagecloud.io/filips/FirefoxPWA/gpgkey\
+       https://packagecloud.io/filips/FirefoxPWA/gpgkey/filips-FirefoxPWA-912AD9BE47FEB404.pub.gpg\
+repo_gpgcheck=1\
+gpgcheck=1\
+enabled=1\
+EOF\
+\
+# Import GPG key and update DNF cache\
+sudo dnf -q makecache -y --disablerepo="*" --enablerepo="firefoxpwa"\
+\
+# Install the package\
+sudo dnf install firefoxpwa\
+
+: 1788722582:0;sudo tee /etc/yum.repos.d/firefoxpwa.repo > /dev/null <<EOF\
+[firefoxpwa]\
+name=FirefoxPWA\
+metadata_expire=7d\
+baseurl=https://packagecloud.io/filips/FirefoxPWA/rpm_any/rpm_any/\$basearch\
+gpgkey=https://packagecloud.io/filips/FirefoxPWA/gpgkey\
+       https://packagecloud.io/filips/FirefoxPWA/gpgkey/filips-FirefoxPWA-912AD9BE47FEB404.pub.gpg\
+repo_gpgcheck=1\
+gpgcheck=1\
+enabled=1\
+EOF
+: 1788722590:0;sudo dnf -q makecache -y --disablerepo="*" --enablerepo="firefoxpwa"
+: 1788722596:0;sudo dnf install firefoxpwa -y
+: 1788722613:0;reset
+: 1788722622:0;ls -a
+: 1788732374:0;sudo dnf install inxi
+: 1788736809:0;sudo cp -r ~/.local/share/plasma/desktoptheme/* /usr/share/plasma/desktoptheme/\
+
+: 1788759632:0;kill 23318
+: 1788817833:0;pkexec ls
+: 1788818075:0;sudo mkdir /home/Shared
+: 1788818080:0;ls /home
+: 1788818128:0;sudo groupadd shared
+: 1788818138:0;sudo usermod -aG shared vjgamz04
+: 1788818143:0;whoami
+: 1788818155:0;sudo chown root:shared /home/Shared
+: 1788818163:0;sudo chmod 2775 /home/Shared
+: 1788818171:0;ls -l /home
+: 1788818625:0;sudo usermod -aG shared viang1
+: 1788818636:0;groups shared
+: 1788830985:0;git clone https://github.com/sreejithag/battery-charging-limiter-linux
+: 1788830988:0;cd ba*
+: 1788830997:0;chmod +x li*
+: 1788831010:0;./limitd.sh 60
+: 1788906116:0;sudo dracut -f
+: 1788916709:0;sudo dnf install yt-dlp
+: 1788916865:0;yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --cookies-from-browser firefox \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \\
+https://www.youtube.com/watch?v=mrsxC_DuGLA&list=RDmrsxC_DuGLA
+: 1788916951:0;yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --cookies-from-browser firefox \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \\
+https://www.youtube.com/watch?v=mrsxC_DuGLA
+: 1788917010:0;yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --cookies-from-browser firefox \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \\
+https://youtu.be/mrsxC_DuGLA?si=mRfJ6ilbMFnmTa7U
+: 1788917077:0;yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \\
+https://youtu.be/DBcLOCcBzuk?si=1ohGnAEFPfWo5qOA
+: 1788917120:0;yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \\
+"https://youtu.be/mrsxC_DuGLA?si=mRfJ6ilbMFnmTa7U"
+: 1788917159:0;sudo dnf remove yt-dlp
+: 1788917220:0;sudo install yt-dlp_linux /usr/local/bin/yt-dlp
+: 1788917226:0;yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \ https://youtu.be/mrsxC_DuGLA?si=mRfJ6ilbMFnmTa7U
+: 1788917268:0;yt-dlp -o https://youtu.be/mrsxC_DuGLA?si=epiJ0-GTtppz4LND
+: 1788917271:0;yt-dlp https://youtu.be/mrsxC_DuGLA?si=epiJ0-GTtppz4LND
+: 1788917317:0;yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \ https://youtu.be/DXnSrSlz_64?si=w7XUWHQOfQXbyY5A
+: 1788917460:0;yt-dlp \\
+  -P "$HOME/Music" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  https://youtu.be/mrsxC_DuGLA?si=mRfJ6ilbMFnmTa7U
+: 1789090629:0;sudo yum install android-tools -y
+: 1789090703:0;chmod +x uad_gui-linux-opengl
+: 1789090706:0;./uad_gui-linux-opengl
+: 1789090849:0;chmod +x uad(
+: 1789189022:0;sudo dnf install kate
+: 1789189785:0;java -jar AoC2point5.jar
+: 1789195019:0;yt-dlp \\
+  -P "$HOME/Music" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  https://youtu.be/UyiDN4fQzi4?si=8Ss2Sj0cuPgvOWcj
+: 1789195043:0;yt-dlp \\
+  -P "$HOME/Music" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --js-runtimes deno \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  https://www.youtube.com/watch?v=UyiDN4fQzi4
+: 1789195226:0;yt-dlp  -P "/home/vjgamz04/Music/Multi-Label"   -f bestaudio --extract-audio --audio-format ogg --min-sleep-interval 5 --max-sleep-interval 10 -x https://www.youtube.com/watch?v=UyiDN4fQzi4
+: 1789195244:0;yt-dlp  -P "/home/vjgamz04/Music" -f bestaudio --extract-audio --audio-format ogg --min-sleep-interval 5 --max-sleep-interval 10 -x https://www.youtube.com/watch?v=UyiDN4fQzi4
+: 1789195256:0;yt-dlp  -P "/home/vjgamz04/Music" -f bestaudio --extract-audio --audio-format ogg --min-sleep-interval 5 --max-sleep-interval 10 https://www.youtube.com/watch?v=UyiDN4fQzi4
+: 1789195275:0;yt-dlp  -P "/home/vjgamz04/Music/Multi-Label"   -f bestaudio --extract-audio --audio-format flac --embed-metadata --embed-thumbnail --add-metadata --min-sleep-interval 5 --max-sleep-interval 10 -x https://www.youtube.com/watch?v=-1SSeBI6Ql4 
+: 1789195285:0;yt-dlp  -P "/home/vjgamz04/Music" -f bestaudio --extract-audio --audio-format ogg --min-sleep-interval 5 --max-sleep-interval 10 -X https://www.youtube.com/watch?v=UyiDN4fQzi4
+: 1789243939:0;powerooff
+: 1789282056:0;sudo dnf install prism-launcher
+: 1789282064:0;sudo dnf install prismlauncher
+: 1789282075:0;sudo dnf search prismlauncher
+: 1789282135:0;sudo dnf install prismlauncher -y
+: 1789329172:0;flatpak override --user --filesystem=xdg-run/app/com.discordapp.Discord:create --filesystem=xdg-run/discord-ipc-0 --device=input org.vinegarhq.Sober
+: 1789708353:0;touch "/"
+: 1789708377:0;ls -l
+: 1789708384:0;rm /
+: 1789708825:0;systemctl soft-reboot
+: 1789716214:0;sudo dnf install @virtualization
+: 1789716297:0;sudo dnf install virt-manager
+: 1789716304:0;sudo systemctl enable libvirtd
+: 1789716320:0;systemctl reboot
+: 1789768496:0;sudo dnf install waydroid
+: 1789795854:0;ls ~/.config | grep *zsh*
+: 1789795863:0;ls ~/.config | grep "*zsh*"
+: 1789795867:0;ls ~/.config
+: 1789795885:0;ls ~/.config/zsh
+: 1789795889:0;ls ~/.config/zsh -A
+: 1789850378:0;sudo dnf install usbmuxd
+: 1789857161:0;idevicepair pair\
+
+: 1789857183:0;ideviceimagemounter DeveloperDiskImage.dmg DeveloperDiskImage.dmg.signature\
+
+: 1789857437:0;pip install pymobiledevice3\
+
+: 1789857490:0;sudo dnf install python3.14-devel\
+ -y
+: 1789857506:0;sudo dnf groupinstall "Development Tools"
+: 1789857513:0;bash pip install --upgrade pip setuptools wheel 
+: 1789857547:0;pip install pymobiledevice3
+: 1789857568:0;sudo pymobiledevice3 remote tunnel start\
+
+: 1789857580:0;pymobiledevice3 remote tunnel start\
+
+: 1789857644:0;sudo python3 -m pymobiledevice3 remote tunneld\
+
+: 1789857659:0;sudo $(which pymobiledevice3) remote tunneld\
+
+: 1789857668:0;sudo ~/.local/bin/pymobiledevice3 remote tunneld\
+
+: 1789857684:0;sudo python3 -m pip install pymobiledevice3 --break-system-packages\
+
+: 1789857718:0;sudo pymobiledevice3 remote tunneld\
+
+: 1789857795:0;pymobiledevice3 remote rsd-info\
+
+: 1789864922:0;adb
+: 1789864937:0;adb shell /data/app/~~_B97_3xoJXK6yDQBcxFIiA==/moe.shizuku.privileged.api-4YA1_1qd1OGelDJZB-PDog==/lib/arm64/libshizuku.so
+: 1789865372:0;adb shell
+: 1790043262:0;chmod +x uad*
+: 1790043263:0;./uad-ng-linux
+: 1790131248:0;sudo dnf install gdm
+: 1790131262:0;sudo nano /var/lib/AccountsService/users/personal\
+
+: 1790131413:0;sudo rm /var/lib/AccountsService/users/personal
+: 1790131420:0;sudo nano /var/lib/AccountsService/users/vjgamz04
+: 1790131445:0;sudo nano /var/lib/AccountsService/users/viang1
+: 1790131536:0;ls /usr/share/wayland-sessions/
+: 1790131564:0;sudo systemctl disable plasma-login
+: 1790131571:0;sudo systemctl disable plasma-login-manager
+: 1790131619:0;sudo systemctl disable plasmalogin
+: 1790131634:0;sudo systemctl enable gdm --force
+: 1790131657:0;sudo dnf remove plasma-login
+: 1790131660:0;sudo dnf remove plasma-login-manager
+: 1790313703:0;yt-dlp \\
+  -P "/home/vjgamz12/Music/Monstercat/Silk" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --yes-playlist \\
+  --js-runtimes deno \\
+  --cookies-from-browser firefox \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o "%(creator)s - %(title)s.%(ext)s" \\
+https://www.youtube.com/playlist?list=PLh5hXlddi7B_clSxQ4rsKTm1DpfGvPvMJ
+: 1790392238:0;curl -fsSL https://raw.githubusercontent.com/ladybug-me/caelestia-kde/main/install.sh | sh
+: 1790392482:0;cd G*
+: 1790392680:0;rm -rf cael*
+: 1790392684:0;git clone https://github.com/ladybug-me/caelestia-kde
+: 1790392843:0;cd caelestia-kde
+: 1790392847:0;cd installer
+: 1790392849:0;cd ..
+: 1790392895:0;lsw
+: 1790392914:0;cd ca*
+: 1790392918:0;./uninstall.sh
+: 1790393199:0;lw
+: 1790393211:0;nano ~/.zshrc
+: 1790393222:0;antidogtge
+: 1790393224:0;antidote
+: 1790393230:0;antidote load
+: 1790395266:0;xdg-open Documents
+: 1790395386:0;rm test
+: 1790395387:0;nano test
+: 1790395393:0;chmod +x test
+: 1790395394:0;sudo ./test
+: 1790395456:0;kquitapp6 plasmashell && kstart6 plasmashell
+: 1790395659:0;			kquitapp6 plasmashell || kquitapp5 plasmashell\
+
+: 1790395662:0;kstart plasmashell
+: 1790395671:0;rm -rf ~/.cache/ksycoca*\
+rm -rf ~/.cache/plasma*\
+
+: 1790396471:0;sudo cp -r /usr/share/applications/org.gnome* /home/viang1/.local/share/applications
+: 1790396479:0;sudo mv -r /usr/share/applications/org.gnome* /home/viang1/.local/share/applications
+: 1790396486:0;sudo mv /usr/share/applications/org.gnome* /home/viang1/.local/share/applications
+: 1790396498:0;sudo ls /home/viang1/.local/share/applications
+: 1790396516:0;ls /usr/share/applications | grep konsole
+: 1790396550:0;ls /usr/share/applications | grep gnome
+: 1790396569:0;sudo mv /usr/share/applications/*gnome* /home/viang1/.local/share/applications
+: 1790396642:0;kquitapp5 krunner || killall krunner\
+
+: 1790396649:0;kquitapp6 krunner || killall krunner\
+
+: 1790396665:0;sudo dnf install balooctl
+: 1790396671:0;sudo dnf install baloo
+: 1790396677:0;balooctl status\
+
+: 1790396836:0;kbuildsycoca6 --noincremental
+: 1790396841:0;kbuildsycoca5 --noincremental
+: 1790396848:0;rm -rf ~/.cache/krunner/\
+rm -rf ~/.cache/krunnernv/\
+
+: 1790396864:0;plasmashell --replace & disown\
+
+: 1790396892:0;sudo dnf reinstall krunner
+: 1790396943:0;mv ~/.config/krunnerrc ~/krunnerrc.bak\
+
+: 1790396949:0;systemctl --user restart plasma-krunner.service\
+
+: 1790396957:0;systemctl --user stop plasma-krunner.service\
+systemctl --user start plasma-krunner.service\
+
+: 1790396966:0;journalctl --user -u plasma-krunner.service --no-pager -n 50\
+
+: 1790396976:0;kbuildsycoca6 --noincremental\
+
+: 1790397115:0;# Delete the application launcher metadata caches\
+rm -f ~/.cache/plasma_theme_*.kcache\
+rm -rf ~/.cache/menus/\
+\
+# Force systemd to fully restart the KRunner background daemon\
+systemctl --user restart plasma-krunner.service --force
+: 1790397132:0;\
+rm -f ~/.cache/plasma_theme_*.kcache\
+rm -rf ~/.cache/menus/\
+\
+systemctl --user restart plasma-krunner.service --force
+: 1790397145:0;systemctl kill plasma-krunner.service
+: 1790397154:0;ls ~/.local/share/applications/\
+
+: 1790397162:0;ls ~/.local/share/applications/mimeinfo.cache
+: 1790397167:0;cat ~/.local/share/applications/mimeinfo.cache
+: 1790397182:0;rm ~/.local/share/applications/mimeinfo.cache
+: 1790397185:0;rm ~/.local/share/applications/*ptyxis*\
+rm ~/.local/share/applications/*Ptyxis*\
+
+: 1790397381:0;killall krunner\
+
+: 1790397384:0;rm -f ~/.config/krunnerrc\
+
+: 1790397387:0;rm -rf ~/.cache/krunner\
+
+: 1790397389:0;krunner &\
+
+: 1790397802:0;kbuildsycoca6\
+
+: 1790397812:0;find / -name "*nautilus*.desktop" 2>/dev/null\
+
+: 1790397853:0;rm -f ~/.local/share/applications/*terminal* ~/.local/share/applications/org.gnome.Terminal.desktop\
+
+: 1790397886:0;find / -name "*org.gnome.Terminal*.desktop" 2>/dev/null\
+
+: 1790397925:0;echo -e "[Desktop Entry]\nType=Application\nName=GNOME Terminal\nNoDisplay=true" > ~/.local/share/applications/org.gnome.Terminal.desktop\
+
+: 1790397935:0;ls ~/.local/share/applications/org 
+: 1790397938:0;ls ~/.local/share/applications/org*
+: 1790398000:0;ls /usr/share/applications/ | grep -i terminal\
+ls /usr/local/share/applications/ | grep -i terminal\
+
+: 1790398006:0;ls ~/.local/share/flatpak/exports/share/applications/\
+ls /var/lib/flatpak/exports/share/applications/\
+
+: 1790398020:0;grep -rnw -e "GNOME Terminal" /usr/share/applications/ ~/.local/share/applications/ /var/lib/flatpak/ /var/lib/snapd/ 2>/dev/null\
+
+: 1790398036:0;rm -rf ~/.cache/krunner/ ~/.cache/krunnernv/ ~/.cache/kactivitymanagerd/\
+killall krunner && kbuildsycoca6 --noincremental\
+
+: 1790398044:0;exe cbash
+: 1790398046:0;exec bash
+: 1790398158:0;sudo dnf remove gnome-shell
+: 1790398221:0;sudo find / -name "*Ptyxis*.desktop" -exec rm -v {} \; 2>/dev/null\
+
+: 1790399267:0;sudo dnf remove vesktop
+: 1790399278:0;sudo dnf install vesktop
+: 1790399325:0;sudo dnf remove vesktop -y
+: 1790399397:0;sudo dnf install vesktop -y
+: 1790455244:0;su root
+: 1790455368:0;sudo ls /
+: 1790455373:0;sudo ls / -A
+: 1790455380:0;sudo nano /etc/fstab
+: 1790455386:0;ls /.swap
+: 1790455393:0;swapon /.swap/swapfile
+: 1790455399:0;sudo swapon /.swap/swapfile
+: 1790455449:0;sudo rm /.swap/swapfile\
+
+: 1790455492:0;sudo dd if=/dev/zero of=/.swap/swapfile bs=1M count=6144 status=progress\
+
+: 1790455502:0;sudo chmod 600 /.swap/swapfile\
+
+: 1790455507:0;sudo mkswap /.swap/swapfile\
+
+: 1790455510:0;sudo swapon /.swap/swapfile\
+
+: 1790455520:0;watch "swapon --show"
+: 1790552460:0;sudo chgrp -R group_name /home/Shared
+: 1790552469:0;sudo chgrp -R shared /home/Shared
+: 1790552538:0;sudo chgrp -R shared /home/Shared/Music/TFR
+: 1790552545:0;ls -l /home/Shared
+: 1790552553:0;mkdir test
+: 1790552564:0;mkdir ~/Music/Test
+: 1790552576:0;rm -rf /home/Shared/Test
+: 1790552900:0;sudo chmod -R g+w /home/Shared
+: 1790552907:0;ls -l /home/Shared/Music
+: 1790552913:0;ls -l /home/Shared/Music/TFR
+: 1790552933:0;l
+: 1790636715:0;sudo mokutil --disable-validation
+: 1790636868:0;sudo mokutil --enable-validation
+: 1790636879:0;reboot
+: 1790637167:0;systemd-analyze pcrs\
+
+: 1790637195:0;lsblk
+: 1790637206:0;sudo cryptsetup luksDump --dump-json-metadata /dev/nvme0n1p7 | jq -r '.tokens | to_entries[] | select(.value.type == "systemd-tpm2") | .value."tpm2-pcrs"'\
+
+: 1790637236:0;sudo systemd-cryptenroll --wipe-slot tpm2 --tpm2-device auto --tpm2-pcrs "0+2+7" /dev/nvme0n1p7
+: 1790915988:0;sudo dnf install sonic-workspace
+: 1790916524:0;git clone https://github.com/asus-linux-drivers/asus-numberpad-driver
+: 1790916532:0;cd asus-numberpad-driver
+: 1790916536:0;git checkout v7.2.3
+: 1790916543:0;bash install.sh
+: 1790916840:0;groups
+: 1790916848:0;sudo usermod -aG numberpad viang1
+: 1790917274:0;sudo gpasswd -d viang1 wheel
+: 1790988018:0;yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format flac \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \\
+
+: 1790988045:0;bash yt-dlp \\
+  -P "/home/vjgamz04/Music/Multi-Label-Collection" \\
+  -f bestaudio \\
+  --extract-audio \\
+  --audio-format ogg \\
+  --embed-metadata \\
+  --embed-thumbnail \\
+  --add-metadata \\
+  --min-sleep-interval 5 \\
+  --max-sleep-interval 10 \\
+  -o \\
+https://www.youtube.com/watch?v=UyiDN4fQzi4
+: 1790988049:0;bash
+: 1790992756:0;yt-dlp --help
+: 1790994866:0;sudo dnf install sassc
+: 1790994884:0;cd Git
+: 1790994891:0;git clone https://github.com/wrymt/darkly-gtk
+: 1790994895:0;cd dar*
+: 1790994903:0;chmod +x install.sh
+: 1790994905:0;./install.sh
+: 1790994923:0;./install.sh -d /home/vjgamz04/.local/share/themes -l
+: 1791056924:0;sudo dnf copr enable cuteneko/waydroid-helper\
+sudo dnf install waydroid-helper
+: 1791057203:0;clear
+: 1791057214:0;ls
+: 1791057283:0;nano ~/.p10k.zsh\
+
+: 1791057297:0;p10k configure
+: 1791057474:0;ls
+: 1791057478:0;p10k configure
+: 1791057511:0;ls
+: 1791057602:0;p10k configure
+: 1791057644:0;ls /
+: 1791057661:0;ls
+: 1791057668:0;watch ls
+: 1791057679:0;ls
+: 1791057683:0;rm caelestia-kde
+: 1791057685:0;rm caelestia-kde -r
+: 1791057690:0;rm caelestia-kde -rf
+: 1791057700:0;rm krunnerrc.bak
+: 1791057708:0;cat my-rpcvirtqemud.pp
+: 1791057793:0;rm my-rpcvirt*
+: 1791057799:0;ls
+: 1791057801:0;ls test
+: 1791057803:0;ls test/test
+: 1791057809:0;cat test
+: 1791057820:0;nano test
+: 1791057824:0;rm test
+: 1791057826:0;clear
+: 1791057847:0;cd Git
+: 1791057848:0;ls
+: 1791057851:0;cd asus-numberpad-driver
+: 1791057859:0;p10k configure
+: 1791057902:0;ls
+: 1791057925:0;p10k configure
+: 1791057958:0;ls
+: 1791057973:0;p10k configure
+: 1791058018:0;clear
+: 1791058042:0;p10k configure
+: 1791058304:0;l
+: 1791058311:0;cd /
+: 1791058320:0;cd /home/Shared
+: 1791059263:0;l
+: 1791059269:0;l ~
+: 1791059276:0;la
+: 1791059277:0;ll
+: 1791059787:0;l
+: 1791062118:0;waydroid-helper
+: 1791062165:0;csudo dnf install vte291-gtk4
+: 1791062167:0;sudo dnf install vte291-gtk4
+: 1791062190:0;python3 -c "import gi; gi.require_version('Vte', '3.91'); from gi.repository import Vte; print('ok')"
+: 1791062194:0;waydroid-helper
+: 1791062642:0;sudo dnf install fakeroot -y\
+
+: 1791063745:0;sudo dnf install wine -y
+: 1791063806:0;cd ~/Downloads
+: 1791064068:0;waydroid session stop
+: 1791064881:0;curl -sSfL https://ublockdns.com/install.sh | sh -s -- pov0o2g6
+: 1791064914:0;sudo  ausearch -c '(ublockdns)' --raw | audit2allow -M my-ublockdns
+: 1791064922:0;sudo semodule -X 300 -i my-ublockdns.pp
+: 1791064968:0;ausearch -c '(ublockdns)' --raw | audit2allow -M my-ublockdns
+: 1791064970:0;sudo ausearch -c '(ublockdns)' --raw | audit2allow -M my-ublockdns
+: 1791064972:0;su root
+: 1791065143:0;curl -sSfL https://ublockdns.com/install.sh | sh -s -- pov0o2g6
+: 1791065179:0;sudo setsebool -P domain_can_mmap_files 1
+: 1791065201:0;ublockdns status
+: 1791065237:0;reboot 
+: 1791065366:0;su root
+: 1791082644:0;nano myscript.sh
+: 1791082714:0;chmod +x myscript.sh
+: 1791082730:0;mynum=100 myscript,sh
+: 1791082734:0;mynum=100 myscript.sh
+: 1791082736:0;myscript.sh
+: 1791082741:0;./myscript.sh
+: 1791082747:0;nano myscript.sh
+: 1791082799:0;./myscript.sh
+: 1791082824:0;nano myscript.sh
+: 1791082832:0;./myscript.sh
+: 1791082834:0;nano myscript.sh
+: 1791082903:0;mynum=200 ./myscript.sh
+: 1791082908:0;mynum=400 ./myscript.sh
+: 1791082917:0;./myscript.sh
+: 1791082918:0;nano myscript.sh
+: 1791082922:0;./myscript.sh
+: 1791082925:0;nano myscript.sh
+: 1791082972:0;mynum=400 ./myscript.sh
+: 1791082975:0;mynum=200 ./myscript.sh
+: 1791082981:0;mynum=8548474847800 ./myscript.sh
+: 1791082990:0;nano myscript.sh
+: 1791083065:0;./myscript.sh
+: 1791083069:0;nano myscript.sh
+: 1791083076:0;./myscript.sh
+: 1791083214:0;nano myscript.sh
+: 1791083226:0;./myscript.sh
+: 1791083228:0;nano
+: 1791083232:0;nano myscript.sh
+: 1791083251:0;./myscript.sh
+: 1791083253:0;nano myscript.sh
+: 1791083262:0;./myscript.sh
+: 1791083266:0;nano myscript.sh
+: 1791083272:0;./myscript.sh
+: 1791083277:0;nano myscript.sh
+: 1791083282:0;./myscript.sh
+: 1791083284:0;nano myscript.sh
+: 1791083351:0;./myscript.sh
+: 1791083357:0;nano myscript.sh
+: 1791083362:0;./myscript.sh
+: 1791083369:0;cat myscript.sh
+: 1791083373:0;./myscript.sh
+: 1791083376:0;myscript.sh
+: 1791083390:0;ls
+: 1791083394:0;touch myfile
+: 1791083397:0;./myscript.sh
+: 1791083405:0;watch ./myscript.sh
+: 1791083410:0;rm myfile
+: 1791083419:0;watch -n 5 ./myscript.sh
+: 1791083423:0;touch myfile
+: 1791083428:0;rm myfile
+: 1791083439:0;touch myfile
+: 1791083443:0;ls
+: 1791083448:0;./myscript.sh
+: 1791083452:0;rm myfile
+: 1791083454:0;./myscript.sh
+: 1791083473:0;nano myscript.sh
+: 1791086489:0;sudo  ausearch -c 'ublockdns' --raw | audit2allow -M my-ublockdns
+: 1791086499:0;semodule -X 300 -i my-ublockdns.pp
+: 1791086509:0;\
+semodule -i my-ublockdns.pp\
+
+: 1791086675:0;./myscript.sh
+: 1791086739:0;man sa
+: 1791086894:0;nano myscript.sh
+: 1791086931:0;./myscript.sh
+: 1791086976:0;nano myscript.sh
+: 1791087018:0;./myscript.sh
+: 1791087103:0;nano myscript2.sh
+: 1791087185:0;chmod +x myscript2.sh
+: 1791087194:0;NUM=250 ./myscript2.sh
+: 1791087198:0;NUM=200 ./myscript2.sh
+: 1791087231:0;nano myscript.sh
+: 1791087240:0;./myscript.sh
+: 1791087266:0;command -v btop
+: 1791087269:0;which btop
+: 1791087582:0;nano myscript.sh
+: 1791087751:0;ls -l /misc
+: 1791087762:0;ls -l /misc 2>/dev/null
+: 1791087772:0;ls -l /misc \2>/dev/null
+: 1791087817:0;echo $?
+: 1791087823:0;echo $!
+: 1791087851:0;echo $#
+: 1791087857:0;echo $%
+: 1791087859:0;echo $?
+: 1791087878:0;ls
+: 1791087883:0;echo $?
+: 1791087888:0;sudo dd
+: 1791087892:0;sudo dddd
+: 1791087895:0;echo $?
+: 1791087902:0;lllll
+: 1791087907:0;echo $?
+: 1791087909:0;$?
+: 1791087910:0;$/
+: 1791087912:0;echo $?
+: 1791087923:0;clear
+: 1791087995:0;echo $?
+: 1791088006:0;ls -l /misc
+: 1791088009:0;echo $?
+: 1791088092:0;nano myscript.sh
+: 1791088134:0;sudo dnf remove htop -y
+: 1791088148:0;./myscript.sh
+: 1791088169:0;$?
+: 1791088176:0;nano myscript.sh
+: 1791088179:0;echo $?
+: 1791088185:0;echo $?-2
+: 1791088210:0;nano myscript.sh
+: 1791088218:0;./myscript.sh
+: 1791088237:0;nano myscript.sh
+: 1791088343:0;sudo dnf remove htop -y
+: 1791088350:0;./myscript.sh
+: 1791088362:0;nano myscript.sh
+: 1791088390:0;./myscript.sh
+: 1791088405:0;nano myscript.sh
+: 1791088549:0;sudo dnf remove htop -y
+: 1791088555:0;./myscript.sh
+: 1791088573:0;sudo dnf remove htop -y
+: 1791088579:0;nano myscript.sh\ 
+: 1791088580:0;nano myscript.sh
+: 1791088603:0;./myscript.sh
+: 1791088610:0;sudo dnf remove htop -y
+: 1791088614:0;nano myscript.sh
+: 1791088769:0;./myscript.sh
+: 1791088773:0;nano myscript.sh
+: 1791088779:0;ls
+: 1791088785:0;cat package_install_f*
+: 1791088792:0;cat package_install_r*
+: 1791088905:0;nano myscript.sh
+: 1791088911:0;./myscript.sh
+: 1791088972:0;nano myscript.sh
+: 1791088978:0;./myscript.sh
+: 1791088983:0;sudo dnf install htop
+: 1791088991:0;nano myscript.sh
+: 1791089006:0;./myscript.sh
+: 1791089011:0;nano myscript.sh
+: 1791089020:0;cat package_install_f*
+: 1791089031:0;fjlasdk;jalfsk;djfsal;fals
+: 1791089069:0;nano myscript.sh
+: 1791089178:0;./myscript.sh
+: 1791089193:0;nano myscript.sh
+: 1791089205:0;nano myscript2.sh
+: 1791089276:0;./myscript2.sh
+: 1791089280:0;nano myscript2.sh
+: 1791089286:0;./myscript2.sh
+: 1791089296:0;rm myscript2.sh
+: 1791089297:0;ls
+: 1791089305:0;nano myscript.sh
+: 1791089315:0;nano myscript2.sh
+: 1791089401:0;./myscript2.sh
+: 1791089404:0;chmod +x myscript2.sh
+: 1791089406:0;./myscript2.sh
+: 1791089410:0;nano myscript2.sh
+: 1791089423:0;./myscript2.sh
+: 1791089439:0;sudo dnf remove htop -y
+: 1791089443:0;./myscript2.sh
+: 1791089452:0;nano myscript2.sh
+: 1791089465:0;./myscript2.sh
+: 1791089468:0;nano myscript2.sh
+: 1791089543:0;./myscript2.sh
+: 1791089549:0;nano myscript2.sh
+: 1791089562:0;./myscript2.sh
+: 1791089564:0;htop
+: 1791089567:0;./myscript2.sh
+: 1791089569:0;nano myscript2.sh
+: 1791089576:0;./myscript2.sh
+: 1791089582:0;nano myscript2.sh
+: 1791089589:0;./myscript2.sh
+: 1791089610:0;nano myscript.sh
+: 1791089653:0;./myscript.sh
+: 1791089657:0;nano myscript.sh
+: 1791089673:0;./myscript.sh
+: 1791089704:0;nano myscript.sh
+: 1791089840:0;./myscript.sh
+: 1791089842:0;nano myscript.sh
+: 1791089870:0;./myscript.sh
+: 1791089877:0;nano myscript.sh
+: 1791089884:0;./myscript.sh
+: 1791089886:0;echo $?
+: 1791089897:0;nano myscript.sh
+: 1791089901:0;./myscript.sh
+: 1791089904:0;echo $?
+: 1791089915:0;nano myscript.sh
+: 1791089932:0;./myscript.sh
+: 1791089945:0;echo $?
+: 1791089955:0;nano myscript.sh
+: 1791089967:0;echo $?
+: 1791090034:0;nano myscript.sh
+: 1791090129:0;./myscript.sh
+: 1791090193:0;nano myscript.sh
+: 1791090199:0;./myscript.sh
+: 1791090201:0;echo $?
+: 1791090203:0;nano myscript.sh
+: 1791090214:0;./myscript.sh
+: 1791090216:0;echo $?
+: 1791090218:0;nano myscript.sh
+: 1791090438:0;semanage fcontext -a -t FILE_TYPE 'ublockdns.conf'
+: 1791090449:0;semanage fcontext -a -t NetworkManager_unit_file_t, 'ublockdns.conf'
+: 1791090452:0;semanage fcontext -a -t NetworkManager_unit_file_t 'ublockdns.conf'
+: 1791090468:0;ublockdns uninstall
+: 1791090478:0;sudo ublockdns uninstall
+: 1791090488:0;ublockdns
+: 1791090503:0;./myscript.sh
+: 1791090510:0;nano myscript.sh
+: 1791090526:0;./myscript.sh
+: 1791090532:0;nano myscript.sh
+: 1791090537:0;./myscript.sh
+: 1791090542:0;nano myscript.sh
+: 1791090548:0;./myscript.sh
+: 1791090556:0;nano myscript.sh
+: 1791090568:0;./myscript.sh
+: 1791090573:0;nano myscript.sh
+: 1791090586:0;./myscript.sh
+: 1791090612:0;nano myscript.sh
+: 1791090622:0;./myscript.sh
+: 1791090631:0;./myscript.sh > numbers.txt
+: 1791090636:0;du -h ~
+: 1791090649:0;du -h --max-depth=1 ~
+: 1791090666:0;./myscript.sh > numbers.txt
+: 1791090708:0;ls
+: 1791090716:0;nano myscript.sh
+: 1791090948:0;touch testfile
+: 1791090955:0;ls -l
+: 1791090967:0;./myscript.sh
+: 1791090983:0;rm testfile
+: 1791091020:0;nano myscript.sh
+: 1791091099:0;nano myscript.sh
+: 1791091135:0;touch testfile
+: 1791091138:0;./myscript.sh
+: 1791091174:0;rm testfile
+: 1791091211:0;./myscript.sh > testl
+: 1791091217:0;cat testl
+: 1791091220:0;touch testfile
+: 1791091222:0;./myscript.sh > testl
+: 1791091266:0;rm testfile
+: 1791091275:0;nano myscript.sh
+: 1791091333:0;./myscript.sh
+: 1791091337:0;touch testfile
+: 1791091373:0;rm testfile
+: 1791091412:0;nano myscript.sh
+: 1791091427:0;./myscript.sh
+: 1791091432:0;man date
+: 1791091449:0;nano myscript.sh
+: 1791091456:0;./myscript.sh
+: 1791091482:0;nano myscript.sh
+: 1791091626:0;./
+: 1791091630:0;./myscript.sh
+: 1791091632:0;nano myscript.sh
+: 1791091642:0;./myscript.sh
+: 1791091656:0;nano myscript.sh
+: 1791091683:0;./myscript.sh
+: 1791091842:0;nano myscript.sh
+: 1791091962:0;sudo dnf install distrobox -y
+: 1791092056:0;distrobox enter Ubuntu
+: 1791092115:0;distrobox create --name Ubuntu --image docker.io/library/ubuntu:26.04 --yes
+: 1791092124:0;distrobox enter Ubuntu
+: 1791092149:0;podman system migrate\
+
+: 1791092153:0;sudo systemctl restart docker\
+
+: 1791092161:0;podman system prune -a --volumes
+: 1791092174:0;distrobox create --name Ubuntu --image docker.io/library/ubuntu:26.04 --yes
+: 1791092182:0;distrobox enter Ubuntu
+: 1791092194:0;distrobox rm --force Ubuntu
+: 1791092202:0;distrobox create --name Ubuntu --image ubuntu:latest
+: 1791092214:0;distrobox enter Ubuntu
+: 1791092235:0;chmod 701 ~
+: 1791092238:0;chmod -R 755 ~/.local/share/containers
+: 1791092245:0;sudo chmod -R 755 ~/.local/share/containers
+: 1791092258:0;sudo touch /etc/hostname\
+
+: 1791092263:0;ls /etc/hostname
+: 1791092266:0;cat /etc/hostname
+: 1791092275:0;nano ~/.config/containers/containers.conf\
+
+: 1791092285:0;podman system migrate\
+rm -rf ~/.local/share/containers/storage\
+distrobox rm --force ubuntu\
+distrobox create --name ubuntu --image ubuntu:latest\
+
+: 1791092299:0;sudo rm -rf rm -rf ~/.local/share/containers/storage
+: 1791092305:0;distrobox rm --force ubuntu
+: 1791092312:0;distrobox create --name Ubuntu --image ubuntu:latest
+: 1791092324:0;distrobox enter Ubuntu
+: 1791092435:0;./myscript.sh
+: 1791092437:0;nano myscript.sh
+: 1791092594:0;if \
+grep -q "Arch"
+: 1791092955:0;mv myscript.sh myscriptv2.sh
+: 1791092958:0;nano myscript.sh
+: 1791092963:0;chmod +x myscript.sh
+: 1791092968:0;nano myscript.sh
+: 1791093006:0;./myscript.sh
+: 1791093062:0;nano myscript.sh
+: 1791093068:0;./
+: 1791093073:0;./myscript.sh
+: 1791093077:0;nano myscript.sh
+: 1791093329:0;cat /dev/urandom
+: 1791093336:0;cat /dev/urandom > file
+: 1791093397:0;./myscript.sh
+: 1791093431:0;nano myscript.sh
+: 1791093444:0;./myscript.sh
+: 1791093447:0;nano myscript.sh
+: 1791093452:0;./myscript.sh
+: 1791093456:0;nano myscript.sh
+: 1791093463:0;./myscript.sh
+: 1791093468:0;nano myscript.sh
+: 1791093627:0;mkdir logfiles
+: 1791093634:0;cp /var/log/*.log logfiles/
+: 1791093643:0;ls logfiles
+: 1791093666:0;touch llogfiles/logfile.txt
+: 1791093670:0;touch logfiles/logfile.txt
+: 1791093683:0;./myscript.sh
+: 1791093693:0;ls logfiles
+: 1791093708:0;cat logfiles/dnf.log
+: 1791093760:0;nano myscript.sh
+: 1791093929:0;mv myscriptv2.sh update.sh
+: 1791093930:0;ls
+: 1791093942:0;./update.sh
+: 1791094167:0;sudo mv update.sh /usr/local/bin/update
+: 1791094172:0;update
+: 1791094190:0;sudo mv /usr/local/bin/update ~/update.sh
+: 1791094193:0;./update.sh
+: 1791094202:0;mkdir Scripts
+: 1791094217:0;which dnf
+: 1791094372:0;swapon --show
+: 1791094450:0;env
+: 1791094595:0;nano myscript.sh
+: 1791094602:0;nano update.sh
+: 1791094948:0;find /etc -type f > /dev/null
+: 1791094955:0;find /etc -type f 0> /dev/null
+: 1791094958:0;find /etc -type f 1> /dev/null
+: 1791095214:0;nano update.sh
+: 1791095442:0;./update.sh
+: 1791095446:0;nano update.sh
+: 1791095471:0;./update.sh
+: 1791095517:0;su $USER
+: 1791095669:0;cd Scripts
+: 1791095686:0;nano DistroHopAutomation
+: 1791095804:0;chmod +x DistroHopAutomation
+: 1791095826:0;nano DistroHopAutomation
+: 1791096099:0;cat /etc/os-releasde
+: 1791096100:0;cat /etc/os-release
+: 1791096233:0;./DistroHopAutomation
+: 1791096235:0;nano DistroHopAutomation
+: 1791096240:0;./DistroHopAutomation
+: 1791096276:0;nano DistroHopAutomation
+: 1791096281:0;nano DistroHopAutomation
+: 1791096533:0;distrobox enter Arch
+: 1791096662:0;ls
+: 1791096671:0;cat DistroHopAutomation
+: 1791096728:0;nano DistroHopAutomation
+: 1791097004:0;nano Vibe
+: 1791097014:0;chmod +x Vibe
+: 1791097017:0;./Vibe
+: 1791097025:0;nano Vibe
+: 1791097058:0;./DistroHopAutomation
+: 1791097281:0;echo $PRETTY_NAME
+: 1791097297:0;nano DistroHopAutomation
+: 1791097341:0;./DistroHopAutomation
+: 1791097396:0;nano DistroHopAutomation
+: 1791097582:0;cd ..
+: 1791097584:0;nano update.sh
+: 1791097952:0;cd Scripts
+: 1791097955:0;nano DistroHopAutomation
+: 1791098007:0;distrobox enter Ubuntu
+: 1791098188:0;echo $XDG_DESKTOP
+: 1791098193:0;env | grep KDE
+: 1791098199:0;nano DistroHopAutomation
+: 1791098404:0;cat DistroHopAutomation
+: 1791098413:0;nano DistroHopAutomation
+: 1791098493:0;cat DistroHopAutomation
+: 1791098702:0;nano DistroHopAutomation
+: 1791099777:0;swapon --show
+: 1791100362:0;nano DistroHopAutomation
+: 1791134944:0;nano myscript.sh
+: 1791135186:0;./DistroHopAutomation
+: 1791135189:0;./myscript.sh
+: 1791135193:0;nano myscript.sh
+: 1791135219:0;./myscript.sh
+: 1791135226:0;nano myscript.sh
+: 1791135233:0;./myscript.sh
+: 1791135274:0;nano myscript.sh
+: 1791135416:0;./myscript.sh
+: 1791135486:0;nan2
+: 1791135489:0;nano myscript.sh
+: 1791135605:0;./myscript.sh
+: 1791135610:0;nano myscript.sh
+: 1791135629:0;./myscript.sh
+: 1791135644:0;nano myscript.sh
+: 1791135666:0;./myscript.sh
+: 1791135668:0;nano myscript.sh
+: 1791135680:0;./myscript.sh
+: 1791135684:0;nano myscript.sh
+: 1791135830:0;./myscript.sh
+: 1791135834:0;nano myscript.sh
+: 1791135909:0;./myscript.sh
+: 1791135922:0;nano myscript.sh
+: 1791136014:0;./myscript.sh
+: 1791136066:0;nano myscript.sh
+: 1791136101:0;./myscript.sh
+: 1791136124:0;nano myscript.sh
+: 1791136135:0;./myscript.sh
+: 1791136198:0;cd Scripts
+: 1791136202:0;nano DistroHopAutomationInstall
+: 1791136242:0;nano DistroHopAutomation
+: 1791136415:0;./DistroHopAutomation
+: 1791136417:0;nano DistroHopAutomation
+: 1791136433:0;./DistroHopAutomation
+: 1791136445:0;nano DistroHopAutomation
+: 1791136567:0;./DistroHopAutomation
+: 1791136583:0;nano DistroHopAutomation
+: 1791136645:0;./DistroHopAutomation
+: 1791136652:0;nano DistroHopAutomation
+: 1791136733:0;./DistroHopAutomation
+: 1791136775:0;nano DistroHopAutomation
+: 1791136810:0;flatpak list
+: 1791136873:0;flatpak insta;; ro.go.hmlendea.DL-Desktop tech.digiroad.Convertidor org.localsend.localsend_app  org.vinegarhq.Sober
+: 1791136880:0;flatpak install ro.go.hmlendea.DL-Desktop tech.digiroad.Convertidor org.localsend.localsend_app  org.vinegarhq.Sober
+: 1791136964:0;./DistroHopAutomation
+: 1791137092:0;cd ..
+: 1791137093:0;ls
+: 1791137106:0;mv myscript.sh myscriptcase.sh
+: 1791137110:0;nano myscript.sh
+: 1791137124:0;which at
+: 1791137127:0;at
+: 1791137130:0;at --help
+: 1791137133:0;at -v
+: 1791137138:0;at -c ls
+: 1791137213:0;nano myscript.sh
+: 1791137281:0;chmod +x myscript.sh
+: 1791137283:0;./myscript.sh
+: 1791137289:0;cat job_results.log
+: 1791137394:0;at 12:111 -f ./myscript.sh
+: 1791137401:0;at 12:11 -f ./myscript.sh
+: 1791137409:0;rm job_*
+: 1791137410:0;ls
+: 1791137467:0;cat job_results.log
+: 1791137501:0;/home/vjgamz04/myscript.sh
+: 1791137503:0;cat job_results.log
+: 1791137511:0;atq
+: 1791137542:0;at 12:13 -f ./myscript.sh
+: 1791137544:0;atq
+: 1791137575:0;atrm 2
+: 1791137581:0;atq
+: 1791137694:0;nano myscript.sh
+: 1791137713:0;ls
+: 1791137718:0;which ls
+: 1791137721:0;which echo
+: 1791137729:0;which date
+: 1791137733:0;ls /usr/bin
+: 1791137751:0;which pkexec
+: 1791137906:0;crontab -e
+: 1791138330:0;nano myscript.sh
+: 1791138385:0;./myscript.sh Linux
+: 1791138443:0;nano myscript.sh
+: 1791138461:0;./myscript.sh Linux Pizza Books Games
+: 1791138464:0;./myscript.sh Linux Pizza Books Games Games
+: 1791138470:0;./myscript.sh Linux Pizza Books Game.....
+: 1791138473:0;./myscript.sh Linux Pizza Books Games
+: 1791138526:0;nano myscript.sh
+: 1791138549:0;./myscript.sh /etc
+: 1791138589:0;nano myscript.sh
+: 1791138671:0;./myscript.sh /etc
+: 1791138675:0;nano myscript.sh
+: 1791138687:0;./myscript.sh /etc
+: 1791138720:0;nano myscript.sh
+: 1791138840:0;$(ls -lh $1 | wc -l) /etc
+: 1791138862:0;ls -lh
+: 1791138898:0;./myscript.sh
+: 1791138900:0;ls
+: 1791138911:0;./myscript.sh ~
+: 1791138958:0;nano myscript.sh
+: 1791139013:0;./myscript.sh ~
+: 1791139016:0;./myscript.sh
+: 1791139087:0;./myscript.sh c
+: 1791139091:0;./myscript.sh /
+: 1791139094:0;./myscript.sh aa
+: 1791139174:0;nano myscript.sh
+: 1791139201:0;rpm -ql virt-manager
+: 1791139218:0;ls /usr/lib
+: 1791139232:0;rpm -qa
+: 1791139238:0;man rpm
+: 1791139297:0;nano myscript.sh
+: 1791145091:0;ls
+: 1791147892:0;libreoffice
+: 1791148024:0;nano myscript.sh
+: 1791150552:0;mkdir backup
+: 1791150553:0;ls
+: 1791150596:0;mv myscript.sh backup.sh
+: 1791150608:0;./backup.sh Pictures/ backup/
+: 1791150613:0;nano myscript.sh
+: 1791150618:0;nano backup.sh
+: 1791150631:0;./backup.sh Pictures/ backup/
+: 1791150639:0;ls backup
+: 1791150645:0;ls
+: 1791150647:0;nano backup.sh
+: 1791150681:0;./backup.sh Pictures/ backup/
+: 1791150685:0;ls 
+: 1791150694:0;cat back_20*
+: 1791150702:0;cat back_2026-10-2026.log
+: 1791150707:0;cat backup_2026-10-2026.log
+: 1791150713:0;cat backup_2026-10-04.log
+: 1791150722:0;ls backup
+: 1791150749:0;nano backup.sh
+: 1791150760:0;./backup.sh 
+: 1791150770:0;./backup.sh Pictures/ 
+: 1791150804:0;./backup.sh Pictures/ backup/
+: 1791150813:0;ls backup
+: 1791150819:0;ls backup/current
+: 1791150871:0;ls Pictures
+: 1791150892:0;touch ~/Pictures/Screenshot_20260524_175142.png
+: 1791150919:0;touch Pictures;s
+: 1791150921:0;ls
+: 1791150937:0;rm backup_2022*
+: 1791150941:0;ls
+: 1791150947:0;rm backup_2026*
+: 1791150949:0;ls
+: 1791150956:0;./backup.sh Pictures/ backup/
+: 1791151046:0;cat backup_2026*.log
+: 1791151058:0;nano backup.sh
+: 1791151069:0;./backup.sh Pictures/ backup/
+: 1791151072:0;ls
+: 1791151076:0;rm backup_2026*
+: 1791151080:0;rm backup_Y*
+: 1791151082:0;./backup.sh Pictures/ backup/
+: 1791151132:0;mkdir Pictures/testfile
+: 1791151138:0;rm Pictures/testfile -r
+: 1791151151:0;touch Pictures/testfile
+: 1791151152:0;./backup.sh Pictures/ backup/
+: 1791151161:0;rm -rfvvv backup
+: 1791151165:0;./backup.sh Pictures/ backup/
+: 1791151171:0;mkdir backup
+: 1791151173:0;./backup.sh Pictures/ backup/
+: 1791151252:0;nano Pictures/testfile
+: 1791151257:0;./backup.sh Pictures/ backup/
+: 1791151270:0;sudo ./backup.sh Pictures/ backup/   
+: 1791151280:0;sudo ~/backup.sh Pictures/ backup/   
+: 1791151308:0;rm -rf /backup/current/backup
+: 1791151324:0;./backup.sh Pictures/ backup/
+: 1791151328:0;nano Pictures/testfile
+: 1791151332:0;nano backup.sh
+: 1791151355:0;./backup.sh Pictures/ backup/
+: 1791151402:0;	ls -ld backup/
+: 1791151411:0;	ls -ld backup/current
+: 1791151418:0;	ls -ld backup/current/backup
+: 1791151421:0;	ls -ld backup/current/backup/s
+: 1791151445:0;rm -rf /backup/
+: 1791152035:0;sudo dnf install vim -y
+: 1791152062:0;ls
+: 1791152068:0;vim myscriptcasse.sh
+: 1791152085:0;vim myscriptcase.sh
+: 1791152285:0;sudo dnf install neovim
+: 1791152300:0;sudo dnf remove vim -y && sudo dnf install neovim -y
+: 1791152342:0;nvim myscriptcase.sh
+: 1791152368:0;ls ~/.config
+: 1791152420:0;vim ~/.zsh_plugins.txt
+: 1791152449:0;ls ~/.config/antidote -A
+: 1791152453:0;ls ~/.config/zsh -A
+: 1791152463:0;nano ~/.config/zsh/.zshrc
+: 1791152490:0;vim ~/.config/zsh/.zshrc
+: 1791152569:0;vim ~/.config/nvim/init.lua
+: 1791152594:0;vim ~/.config/zsh/.zshrc
+: 1791152654:0;vim myscriptcase.sh
+: 1791152748:0;nvim ~/.config/nvim/init.lua\
+
+: 1791152787:0;touch ~/.config/nvim/init.lua
+: 1791152814:0;mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua\
+
+: 1791152818:0;nvim ~/.config/nvim/init.lua\
+
+: 1791153067:0;vim myscriptcase.sh
+: 1791153091:0;nvim ~/.config/nvim/init.lua\
+
+: 1791153118:0;vim myscriptcase.sh
+: 1791153143:0;nvim ~/.config/nvim/init.lua\
+
+: 1791153164:0;vim myscriptcase.sh
+: 1791153182:0;nvim ~/.config/nvim/init.lua\
+
+: 1791153203:0;vim myscriptcase.sh
+: 1791153269:0;nvim ~/.config/nvim/init.lua\
+
+: 1791153765:0;ls
+: 1791153770:0;nano ~/.config/zsh/.zshrc
+: 1791155349:0;sudo dnf install -y neovim git lazygit fd-find curl ripgrep tree-sitter-cli
+: 1791155394:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1791155404:0;ls ~/.config/nvim
+: 1791155410:0;rm -rf ~/.config/nvim
+: 1791155416:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1791155428:0;rm -rf ~/.config/nvim/.git
+: 1791155431:0;nvim
+: 1791155491:0;nvim ~/.config/nvim/init.lua\
+
+: 1791155517:0;nvim
+: 1791155536:0;nvim ~/.config/nvim/init.lua\
+
+: 1791155601:0;nvim ~/.config/nvim/lua/config/options.lua
+: 1791155706:0;vim ~/.config/nvim/lua/config/options.lua
+: 1791155932:0;vim ~/.config/nvim/lua/config/breezy.lua
+: 1791156022:0;vim ~/.config/nvim/lua/plugins/theme.lua
+: 1791156038:0;ls ~/.config/nvim
+: 1791156054:0;vim ~/.config/nvim/init.lua
+: 1791156422:0;nvim
+: 1791156534:0;rm -rf ~/.config/nvim\
+rm -rf ~/.local/share/nvim\
+rm -rf ~/.local/state/nvim\
+rm -rf ~/.cache/nvim\
+
+: 1791156539:0;nvim
+: 1791156554:0;nvim myscriptcase.sh
+: 1791156663:0;mkdir ~/.config/nvim
+: 1791156671:0;touch ~/.config/nvim/init.lua
+: 1791156678:0;nvim ~/.config/nvim/init.lua
+: 1791156795:0;nvim myscriptcase.sh
+: 1791156806:0;nvim ~/.config/nvim/init.lua
+: 1791156825:0;nvim myscriptcase.sh
+: 1791156842:0;nano myscriptcase.sh
+: 1791156894:0;nvim ~/.config/nvim/init.lua
+: 1791156939:0;nvim myscriptcase.sh
+: 1791156999:0;nvim ~/.config/nvim/init.lua
+: 1791157244:0;nvim myscriptcase.sh
+: 1791157293:0;rm -f ~/.config/nvim/init.lua
+: 1791157295:0;touch ~/.config/nvim/init.lua
+: 1791157298:0;nvim ~/.config/nvim/init.lua
+: 1791157311:0;nvim myscriptcase.sh
+: 1791157360:0;nvim ~/.config/nvim/init.lua
+: 1791157376:0;nvim myscriptcase.sh
+: 1791157455:0;nano myscriptcase.sh
+: 1791157506:0;rm -f ~/.config/nvim/init.lua
+: 1791157507:0;touch ~/.config/nvim/init.lua
+: 1791157511:0;nvim ~/.config/nvim/init.lua
+: 1791157576:0;nvim myscriptcase.sh
+: 1791157595:0;nano myscriptcase.sh
+: 1791157644:0;rm -f ~/.config/nvim/init.lua
+: 1791157645:0;touch ~/.config/nvim/init.lua
+: 1791157649:0;nvim ~/.config/nvim/init.lua
+: 1791157669:0;nvim myscriptcase.sh
+: 1791157679:0;nvim ~/.config/nvim/init.lua
+: 1791157696:0;lscolors
+: 1791157718:0;for i in {0..255}; do printf "\e[38;5;${i}m%3d \e[0m" "$i"; [ $((($i+1) % 16)) -eq 0 ] && echo; done\
+
+: 1791157750:0;nvim myscriptcase.sh
+: 1791157786:0;nano ~/.config/zsh/.zshrc
+: 1791157817:0;tput colors\
+
+: 1791157848:0;nvim ~/.config/nvim/init.lua\
+
+: 1791157888:0;rm -f ~/.config/nvim/init.lua
+: 1791157891:0;touch ~/.config/nvim/init.lua
+: 1791157893:0;nvim ~/.config/nvim/init.lua
+: 1791157953:0;nvim myscriptcase.sh
+: 1791157974:0;nvim ~/.config/nvim/init.lua
+: 1791157985:0;rm -f ~/.config/nvim/init.lua
+: 1791157988:0;touch ~/.config/nvim/init.lua
+: 1791157990:0;nvim ~/.config/nvim/init.lua
+: 1791158029:0;nvim myscriptcase.sh
+: 1791158148:0;echo $COLORTERM
+: 1791158247:0;nvim ~/.config/nvim/init.lua
+: 1791158275:0;nvim myscriptcase.sh
+: 1791158298:0;nvim ~/.config/nvim/init.lua
+: 1791158368:0;nvim myscriptcase.sh
+: 1791158420:0;rm -f ~/.config/nvim/init.lua
+: 1791158421:0;touch ~/.config/nvim/init.lua
+: 1791158423:0;nvim ~/.config/nvim/init.lua
+: 1791158454:0;nvim myscriptcase.sh
+: 1791158510:0;rm -f ~/.config/nvim/init.lua
+: 1791158517:0;touch ~/.config/nvim/init.vim
+: 1791158524:0;nvim ~/.config/nvim/init.vim
+: 1791158554:0;nano myscriptcase.sh
+: 1791158558:0;nvim myscriptcase.sh
+: 1791158845:0;rm -f ~/.config/nvim/init.vim
+: 1791158850:0;nano ~/.vimrc
+: 1791158905:0;nvim myscriptcase.sh
+: 1791158952:0;nano ~/.zshrc
+: 1791158960:0;nano ~/.config/zsh/.zshrc
+: 1791158972:0;nvim myscriptcase.sh
+: 1791159150:0;touch ~/.config/nvim/init.vim
+: 1791159153:0;nvim ~/.config/nvim/init.vim
+: 1791159166:0;nano myscriptcase.sh
+: 1791159169:0;nvim myscriptcase.sh
+: 1791159198:0;echo " Test "
+: 1791159201:0;nano myscriptcase.sh
+: 1791159207:0;nvim myscriptcase.sh
+: 1791159333:0;nvim ~/.config/nvim/init.vim
+: 1791159345:0;nvim myscriptcase.sh
+: 1791159351:0;nvim ~/.config/nvim/init.vim
+: 1791159402:0;nvim Scripts/DistroHopAutomation
+: 1791159534:0;vim ~/.config/nvim/init.lua
+: 1791159544:0;vim myscriptcase.sh
+: 1791159559:0;cat ~/.config/zsh/.zshrc
+: 1791159565:0;vim myscriptcase.sh
+: 1791159588:0;nano ~/.vimrc
+: 1791159622:0;vim myscriptcase.sh
+: 1791159696:0;sudo dnf install helix -y
+: 1791159744:0;hx myscriptcase.sh
+: 1791159799:0;~/.config/helix/config.toml
+: 1791159804:0;hx ~/.config/helix/config.toml
+: 1791159833:0;hx myscriptcase.sh
+: 1791159931:0;hx ~/.config/helix/config.toml
+: 1791160044:0;hx myscriptcase.sh
+: 1791160061:0;lsss
+: 1791160068:0;hx myscriptcase.sh
+: 1791160116:0;hx ~/.config/helix/config.toml
+: 1791160158:0;hx myscriptcase.sh
+: 1791160242:0;hx ~/.config/helix/config.toml
+: 1791160308:0;hx myscriptcase.sh
+: 1791160334:0;echo "# Test"
+: 1791160351:0;hx myscriptcase.sh
+: 1791160354:0;hx ~/.config/helix/config.toml
+: 1791160369:0;hx myscriptcase.sh
+: 1791160460:0;hx ~/.config/helix/config.toml
+: 1791160589:0;sudo dnf remove nvim vim -y
+: 1791160597:0;which nvim
+: 1791160604:0;rm -f /usr/bin/nvim
+: 1791160610:0;sudo rm -f /usr/bin/nvim
+: 1791160614:0;sudo rm -f /usr/bin/vim
+: 1791160621:0;which nvim
+: 1791160637:0;hx ~/.config/helix/config.toml
+: 1791160648:0;cd Scripts
+: 1791160653:0;hx Di*
+: 1791161026:0;clear
+: 1791161029:0;hx Di*
+: 1791161135:0;cd Scripts
+: 1791161136:0;hx Di*
+: 1791161245:0;hx myscriptcase.sh
+: 1791161280:0;sudo dnf remove nano
+: 1791161306:0;hx myscriptcase.sh
+: 1791161373:0;export EDITOR="hx"\
+export VISUAL="hx"\
+
+: 1791161398:0;sudo dnf remove nano -y
+: 1791161454:0;nano
+: 1791161482:0;hx myscriptcase.sh
+: 1791161547:0;cd Scripts
+: 1791161552:0;hx Di*
+: 1791233858:0;cd Scripts
+: 1791233859:0;hx Di*
+: 1791233948:0;cd Scripts
+: 1791233952:0;nano Di*
+: 1791234033:0;sudo dnf install nvim
+: 1791234058:0;sudo dnf install neovim -y
+: 1791234068:0;sudo dnf remove neovim
+: 1791234076:0;sudo dnf install neovim -y
+: 1791234086:0;hx Di*
+: 1791234128:0;mkdir ~/.config/nvim
+: 1791234131:0;touch ~/.config/nvim/init.vim
+: 1791234135:0;nvim ~/.config/nvim/init.vim
+: 1791234175:0;curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+   https://githubusercontent.com\
+
+: 1791234229:0;nvim ~/.config/nvim/init.vim
+: 1791234412:0;rm -f ~/.config/nvim/init.vim
+: 1791234414:0;nvim ~/.config/nvim/init.vim
+: 1791234486:0;mkdir ~/.local/share/nvim/lazy
+: 1791234492:0;git clone --filter=blob:none https://github.com --branch=stable ~/.local/share/nvim/lazy/lazy.nvim\
+
+: 1791234552:0;git clone --filter=blob:none https://github.com --branch=stable /home/vjgamz04/.local/share/nvim/lazy/lazy.nvim\
+
+: 1791234567:0;git clone --filter=blob:none https://github.com/folk/lazy.nvim --branch=stable /home/vjgamz04/.local/share/nvim/lazy/lazy.nvim\
+
+: 1791234735:0;curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+   https://githubusercontent.com\
+
+: 1791234804:0;curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim\
+
+: 1791234816:0;nvim ~/.config/nvim/init.vim
+: 1791234822:0;rm -f ~/.config/nvim/init.vim
+: 1791234827:0;nvim ~/.config/nvim/init.vim
+: 1791235020:0;nvim
+: 1791235056:0;rm -f ~/.config/nvim/init.vim
+: 1791235060:0;nvim ~/.config/nvim/init.vim
+: 1791235101:0;nvim Di*
+: 1791235147:0;nvim ~/.config/nvim/init.vim
+: 1791235180:0;nvim Di*
+: 1791235199:0;nvim ~/.config/nvim/init.vim
+: 1791235517:0;nano Di*
+: 1791235531:0;nvim Di*
+: 1791235550:0;nvim ~/.config/nvim/init.vim
+: 1791235567:0;nvim Di*
+: 1791235596:0;echo $HOME
+: 1791235700:0;nvim Di*
+: 1791235712:0;nvim ~/.config/nvim/init.vim
+: 1791235723:0;nvim Di*
+: 1791235760:0;nvim ~/.config/nvim/init.vim
+: 1791235837:0;nvim Di*
+: 1791235857:0;nvim ~/.config/nvim/init.vim
+: 1791235888:0;nvim Di*
+: 1791235934:0;nvim ~/.config/nvim/init.vim
+: 1791235986:0;nvim Di*
+: 1791236018:0;nvim ~/.config/nvim/init.vim
+: 1791236137:0;nvim D*
+: 1791236404:0;nvim ~/.config/nvim/init.vim
+: 1791236425:0;nvim D*
+: 1791236435:0;hx Di*
+: 1791236455:0;nvim D*
+: 1791236606:0;nvim ~/.config/nvim/init.vim
+: 1791236621:0;nvim D*
+: 1791236688:0;nvim ~/.config/nvim/init.vim
+: 1791236769:0;hx ~/.config/nvim/init.vim
+: 1791236789:0;nvim ~/.config/nvim/init.vim
+: 1791236819:0;hx ~/.config/nvim/init.vim
+: 1791236833:0;rm -f ~/.config/nvim/init.vim
+: 1791236835:0;nvim ~/.config/nvim/init.vim
+: 1791236844:0;nvim D*
+: 1791236904:0;hx ~/.config/nvim/init.vim
+: 1791236909:0;hx Di*
+: 1791236939:0;nvim D*
+: 1791236979:0;nvim ~/.config/nvim/init.vim
+: 1791237012:0;nvim D*
+: 1791237089:0;nvim ~/.config/nvim/init.vim
+: 1791237145:0;nvim D*
+: 1791237161:0;nvim ~/.config/nvim/init.vim
+: 1791237191:0;nvim D*
+: 1791237213:0;nvim ~/.config/nvim/init.vim
+: 1791237225:0;nvim D*
+: 1791237246:0;nvim ~/.config/nvim/init.vim
+: 1791237311:0;nvim D*
+: 1791237319:0;nvim ~/.config/nvim/init.vim
+: 1791237340:0;nvim D*
+: 1791237346:0;nvim ~/.config/nvim/init.vim
+: 1791237352:0;nvim D*
+: 1791237355:0;nvim ~/.config/nvim/init.vim
+: 1791237373:0;nvim D*
+: 1791237381:0;nvim ~/.config/nvim/init.vim
+: 1791237390:0;nvim D*
+: 1791237394:0;nvim ~/.config/nvim/init.vim
+: 1791237406:0;nvim D*
+: 1791237421:0;nvim ~/.config/nvim/init.vim
+: 1791237460:0;nvim D*
+: 1791237464:0;nvim ~/.config/nvim/init.vim
+: 1791237480:0;nvim D*
+: 1791237487:0;nvim ~/.config/nvim/init.vim
+: 1791237509:0;nvim D*
+: 1791237594:0;nvim ~/.config/nvim/init.vim
+: 1791237609:0;nvim D*
+: 1791237615:0;nvim ~/.config/nvim/init.vim
+: 1791237625:0;nvim D*
+: 1791237631:0;nvim ~/.config/nvim/init.vim
+: 1791237652:0;nvim D*
+: 1791237657:0;nvim ~/.config/nvim/init.vim
+: 1791237669:0;nvim D*
+: 1791237751:0;nvim ~/.config/nvim/init.vim
+: 1791237835:0;nvim D*
+: 1791237844:0;nvim ~/.config/nvim/init.vim
+: 1791237873:0;nvim D*
+: 1791237889:0;nvim ~/.config/nvim/init.vim
+: 1791237907:0;nvim D*
+: 1791237912:0;nvim ~/.config/nvim/init.vim
+: 1791237957:0;nvim D*
+: 1791237984:0;nvim ~/.config/nvim/init.vim
+: 1791238157:0;nvim D*
+: 1791238201:0;nvim ~/.config/nvim/init.vim
+: 1791238212:0;nvim D*
+: 1791238220:0;nvim ~/.config/nvim/init.vim
+: 1791238240:0;nvim D*
+: 1791238348:0;nvim ~/.config/nvim/init.vim
+: 1791238377:0;nvim D*
+: 1791238387:0;nvim ~/.config/nvim/init.vim
+: 1791238413:0;nvim D*
+: 1791238453:0;sudo dnf remove helix
+: 1791238464:0;hx Di*
+: 1791238469:0;nvim D*
+: 1791247986:0;nvim ~/.config/nvim/init.vim
+: 1791247995:0;nvim D*
+: 1791254584:0;nvim ~/.config/nvim/init.vim
+: 1791254601:0;nvim D*
+: 1791254617:0;nvim ~/.config/nvim/init.vim
+: 1791254855:0;nvim D*
+: 1791254920:0;cat ~/.config/nvim/init.vim
+: 1791254996:0;nvim ~/.config/nvim/init.vim
+: 1791255042:0;nvim D*
+: 1791255137:0;nvim ~/.config/nvim/init.vim
+: 1791255168:0;nvim D*
+: 1791255175:0;nvim ~/.config/nvim/init.vim
+: 1791255209:0;nvim D*
+: 1791255218:0;nvim ~/.config/nvim/init.vim
+: 1791255276:0;nvim D*
+: 1791255282:0;nvim ~/.config/nvim/init.vim
+: 1791255400:0;nvim D*
+: 1791255425:0;nvim ~/.config/nvim/init.vim
+: 1791255431:0;cat ~/.config/nvim/init.vim
+: 1791255569:0;nvim ~/.config/nvim/init.vim
+: 1791255591:0;nvim D*
+: 1791255647:0;nvim ~/.config/nvim/init.vim
+: 1791255698:0;nvim D*
+: 1791255864:0;nvim ~/.config/nvim/init.vim
+: 1791255887:0;nvim D*
+: 1791264711:0;nvim /etc/os-release
+: 1791264726:0;nvim D*
+: 1791264732:0;cd Scripts
+: 1791264734:0;nvim D*
+: 1791264849:0;./DistroHopAutomation
+: 1791264923:0;cd ~
+: 1791264924:0;mkdir -p ~/dotfiles/kde/.config\
+mkdir -p ~/dotfiles/kde/.local/share\
+
+: 1791264959:0;sudo dnf install stow -y
+: 1791265125:0;mv ~/.config/kdeglobals ~/dotfiles/kde/.config/\
+mv ~/.config/kglobalshortcutsrc ~/dotfiles/kde/.config/\
+
+: 1791265126:0;cd ~/dotfiles\
+stow kde\
+
+: 1791265146:0;ls ~/.config/kdeglobals
+: 1791265155:0;ls ~/.config/kdeglobals/*
+: 1791265168:0;ls ~/dotfiles/kde/.config/kdeglobals
+: 1791265188:0;cd ~/dotfiles
+: 1791265237:0;git add .
+: 1791265263:0;ls
+: 1791265266:0;ls kde
+: 1791265278:0;git add .
+: 1791265306:0;git init
+: 1791265347:0;git remote add origin git@github.com:VJGamz04'/dotfiles.git
+: 1791265360:0;git remote add origin git@github.com:VJGamz04/dotfiles.git
+: 1791265370:0;git branch -M main
+: 1791265374:0;git add .
+: 1791265379:0;git commit -m "Initialize KDE dotfiles"
+: 1791265391:0;git config --global user.email "vjgamz88@gmail.com"
+: 1791266050:0;curl -i https://github.com\
+
+: 1791266084:0;clear
+: 1791266085:0;curl -i https://github.com\
+
+: 1791266946:0;cd ~/dotfiles
+: 1791267019:0;cd ..
+: 1791267020:0;mv dotfiles Dotfiles
+: 1791267024:0;cd Dotfiles
+: 1791267030:0;nano sync.sh
+: 1791267033:0;nvim sync.sh
+: 1791267097:0;git config --global user.email "338441352+vj-unix@users.noreply.github.com"
+: 1791267112:0;git config --global user.name "vj-unix"
+: 1791267129:0;git remote add origin git@github.com:VJUnix/dotfiles.git
+: 1791267137:0;origin
+: 1791267187:0;git remote add origin git@github.com:vj-unix/dotfiles.git
+: 1791267220:0;git remote set-url origin git@github.com:vj-unix/Dotfiles.git\
+
+: 1791267228:0;ls -A
+: 1791267234:0;git branch -M main
+: 1791267245:0;git add .
+: 1791267252:0;git commit -m "Initialize KDE dotfiles"
+: 1791267257:0;git push -u origin main
+: 1791267293:0;ls -la ~/.ssh\
+
+: 1791267314:0;ssh-keygen -t ed25519 -C "viangamil12@gmail.com"
+: 1791267353:0;mkdir ~/.ssh/keys
+: 1791267354:0;ssh-keygen -t ed25519 -C "viangamil12@gmail.com"
+: 1791267374:0;ls ~/.ssh
+: 1791267383:0;touch ~/.ssh/gitkey
+: 1791267385:0;ssh-keygen -t ed25519 -C "viangamil12@gmail.com"
+: 1791267426:0;cat ~/.ssh/id_ed25519.pub\
+
+: 1791267428:0;ssh-keygen -t ed25519 -C "viangamil12@gmail.com"
+: 1791267458:0;cat ~/.ssh/id_ed25519.pub\
+
+: 1791267580:0;rm -f ~/.ssh/id_ed25519.pub*\
+
+: 1791267584:0;ssh-keygen -t ed25519 -C "viangamil12@gmail.com"\
+
+: 1791267597:0;cat ~/.ssh/id_ed25519.pub\
+
+: 1791267632:0;git commit -m "Initialize KDE dotfiles"
+: 1791267642:0;git push -u origin main
+: 1791267671:0;git remote -v\
+
+: 1791267821:0;git commit -m "Initialize KDE dotfiles"
+: 1791267824:0;git push -u origin main
+: 1791267841:0;git pull
+: 1791267845:0;git push -u origin main
+: 1791267848:0;git commit -m "Initialize KDE dotfiles"
+: 1791267849:0;ls
+: 1791267852:0;ls -A
+: 1791267873:0;git remote set-url origin git@github.com:vj-unix/Dotfiles.git\
+
+: 1791267899:0;git push -u origin main\
+
+: 1791267920:0;git push -u origin main --force\
+
+: 1791267970:0;mkdir -p ~/Dotfiles/kde/.local/share\
+
+: 1791267976:0;# Copy your custom color palettes\
+cp -r ~/.local/share/color-schemes ~/Dotfiles/kde/.local/share/\
+\
+# Copy your desktop layouts, widgets, and panel configurations\
+cp -r ~/.local/share/plasma ~/Dotfiles/kde/.local/share/\
+\
+# Copy your window decoration borders\
+cp -r ~/.local/share/aurorae ~/Dotfiles/kde/.local/share/\
+
+: 1791267981:0;cp -r ~/.local/share/color-schemes ~/Dotfiles/kde/.local/share/
+: 1791267988:0;cp -r ~/.local/share/plasma ~/Dotfiles/kde/.local/share/
+: 1791267990:0;cp -r ~/.local/share/aurorae ~/Dotfiles/kde/.local/share/
+: 1791267997:0;ls ~/.local/share
+: 1791268008:0;cp -r ~/.local/share/icons ~/Dotfiles/kde/.local/share/
+: 1791268022:0;rm -r ~/Dotfiles/.local/share/icons
+: 1791268030:0;ls ~/Dotfiles
+: 1791268038:0;rm -r ~/Dotfiles/kde/.local/share/icons
+: 1791268094:0;nvim ~/.config/nvim/init.vim
+: 1791268374:0;cp -r ~/.local/share/zsh ~/Dotfiles/zsh
